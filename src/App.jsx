@@ -3,11 +3,11 @@ import ItemListContainer from "./components/pages/itemListContainer/ItemListCont
 import Cart from "./components/pages/cart/Cart";
 import ItemDetailContainer from "./components/pages/itemDetailContainer/ItemDetailContainer";
 import Layout from "./components/layout/Layout";
+import Error from "./components/pages/Error/Error";
 
 function App() {
   return (
     <BrowserRouter>
-      {/* <ThemeProvider theme={customTheme}> */}
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<ItemListContainer />} />
@@ -17,11 +17,9 @@ function App() {
           />
           <Route path="/cart" element={<Cart />} />
           <Route path="/itemDetail/:id" element={<ItemDetailContainer />} />
-
-          <Route path="*" element={<h1>Not found</h1>} />
         </Route>
+        <Route path="*" element={<Error />} />
       </Routes>
-      {/* </ThemeProvider> */}
     </BrowserRouter>
   );
 }

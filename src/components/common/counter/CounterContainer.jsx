@@ -8,7 +8,7 @@ const CounterContainer = ({ stock, onAdd }) => {
     if (contador < stock) {
       setContador(contador + 1);
     } else {
-      alert("cantidad maxima");
+      alert("Cantidad Maxima disponible");
     }
   };
 
