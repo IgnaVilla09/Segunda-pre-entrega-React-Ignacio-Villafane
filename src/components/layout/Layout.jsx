@@ -1,19 +1,20 @@
 import { Navbar } from "./navbar/Navbar";
 import Footer from "./footer/Footer";
 import { Outlet } from "react-router-dom";
+import { Box } from "@mui/material";
 
 const Layout = () => {
   return (
     <div>
-      <div style={{ height: "10vh" }}>
+      <Box sx={{ height: "20vh" }}>
         <Navbar />
-      </div>
-      <div style={{ minHeight: "80vh" }}>
+      </Box>
+      <Box sx={{ minHeight: "80vh" }}>
         <Outlet />
-      </div>
-      <div style={{ height: "10vh" }}>
+      </Box>
+      <Box sx={{ height: "10vh" }}>
         <Footer />
-      </div>
+      </Box>
     </div>
   );
 };

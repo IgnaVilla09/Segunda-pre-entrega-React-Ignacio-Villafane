@@ -2,39 +2,39 @@
 export let products = [
     {
         id: 1,
-        title: "Nike",
-        price: 15000,
+        title: "AMD Ryzen 5 5600X",
+        price: 150000,
         stock: 4,
-        description: "Estas son las mejores zapatillas",
-        category: "deportivas",
-        img: "https://res.cloudinary.com/dnqfh2chg/image/upload/v1669326932/free-metcon-4-zapatillas-de-entrenamiento-TQMCZg_fvia3m.png"
+        description: "Procesador de gama media-alta, ideal para juegos triple A y calidad precio rendimiento",
+        category: "procesador",
+        img: "https://fullh4rd.com.ar/img/productos/1/micro-amd-ryzen-5-5600x-svideo-ccooler-0.jpg"
     },
     {
         id: 2,
-        title: "Wilson",
-        price: 14500,
+        title: "Tarjeta grafica RTX 3060ti",
+        price: 245000,
         stock: 5,
-        description: "Ultra livianas y cuentan con camara de aire",
-        category: "deportivas",
-        img: "https://res.cloudinary.com/dnqfh2chg/image/upload/v1669430010/foc364fsakkzmausrovn.jpg"
+        description: "La tarjeta grafica mas vendida del mercado, potencia, rendimiento, refrigeracion y alto desempeño",
+        category: "graficas",
+        img: "https://acdn.mitiendanube.com/stores/854/212/products/placa-de-video-geforce-rtx-3060ti-8gb1-2f501a3c4abe9799b716244917603109-640-0.png"
     },
     {
         id: 3,
-        title: "Puma",
-        price: 19000,
+        title: "Intel i7 11700KF",
+        price: 220000,
         stock: 2,
-        description: "Las clasicas zapatillas que van para cualquier momento del dia",
-        category: "urbanas",
-        img: "https://res.cloudinary.com/dnqfh2chg/image/upload/v1669430165/images_lujpmr.jpg"
+        description: "Procesador gama alta, ideal para juegos y renderizado",
+        category: "procesador",
+        img: "https://www.xt-pc.com.ar/img/productos/1/CPU582.jpg"
     },
     {
         id: 4,
-        title: "Jaguar",
-        price: 17800,
+        title: "Tarjeta grafica RX 5700XT",
+        price: 178000,
         stock: 5,
-        description: "Zapatillas de ultima generacion para el deporte",
-        category: "urbanas",
-        img: "https://res.cloudinary.com/dnqfh2chg/image/upload/v1669430220/rtokwmt3j03bblbfhwhb.jpg"
+        description: "Desempeño, diseño, alto rendimiento y calidad precio, gran capacidad de procesamiento grafico",
+        category: "graficas",
+        img: "https://static.gigabyte.com/StaticFile/Image/Global/3afe5903381258a9f97d2dec1d91e154/Product/24060/png/500"
     }
     
 ]

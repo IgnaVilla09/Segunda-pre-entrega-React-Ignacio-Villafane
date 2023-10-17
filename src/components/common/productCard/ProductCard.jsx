@@ -10,21 +10,21 @@ import { Link } from "react-router-dom";
 
 const ProductCard = ({ item }) => {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 300, maxHeight: 700, marginBottom: 20, marginTop: 5 }}>
       <CardMedia
-        sx={{ height: 140 }}
+        sx={{ height: 190 }}
         image={item.img}
         title={`image ${item.title}`}
       />
       <CardContent>
-        <Typography gutterBottom variant="h4" component="div">
+        <Typography gutterBottom variant="h6" component="div">
           {item.title}
         </Typography>
-        <Typography variant="h6" color="text.secondary">
+        <Typography variant="h7" color="text.secondary">
           {item.description}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          $ {item.price} .-
+          $ {item.price}
         </Typography>
       </CardContent>
       <CardActions>

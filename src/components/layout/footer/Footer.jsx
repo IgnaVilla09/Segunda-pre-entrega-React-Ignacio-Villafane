@@ -4,8 +4,8 @@ const Footer = () => {
   return (
     <>
      
-      <div style={{ width: "100%", backgroundColor: "black", height: "10vh" }}>
-        <h4 style={{ color: "white" }}>Este es el footer</h4>
+      <div style={{ width: "100%", backgroundColor: "#150681", height: "10vh" }}>
+        <h6 style={{ color: "white", padding: 8 }}>Todos los derechos Reservados</h6>
       </div>
     </>
   );

@@ -4,7 +4,6 @@ import { createTheme } from "@mui/material";
     palette:{
         primary: {
             main: "#d87d4a",
-            // secondary: "crimson"
         },
         secondary: {
             main: "#fbaf85"
