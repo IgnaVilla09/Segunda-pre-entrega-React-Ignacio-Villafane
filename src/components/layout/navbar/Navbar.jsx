@@ -1,15 +1,15 @@
-import { Box, responsiveFontSizes } from "@mui/material";
+import { Box } from "@mui/material";
 import CartWidget from "../../common/cartWidget/CartWidget";
 import "./Navbar.css";
-import { Outlet, Link } from "react-router-dom";
-import { Height } from "@mui/icons-material";
+import { Link } from "react-router-dom";
+
 
 export const Navbar = () => {
   return (
     <>
       <Box className={"containerNavbar"} sx={{height: 110}}>
         <Link to="/" className="logoNav">
-        <img style={{width: 70, marginTop:5}}
+        <img style={{width: 70, height: 70, marginTop:5}}
         src="https://cdn1.iconfinder.com/data/icons/programing-development-8/24/react_logo-512.png"
         alt="Logo"
         />
