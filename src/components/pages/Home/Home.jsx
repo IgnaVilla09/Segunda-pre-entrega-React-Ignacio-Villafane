@@ -21,7 +21,6 @@ const Home = () => {
           className="img-banner"
         />
       </Box>
-      ;
     </>
   );
 };
