@@ -10,9 +10,21 @@ import { Link } from "react-router-dom";
 
 const ProductCard = ({ item }) => {
   return (
-    <Card sx={{ maxWidth: 300, maxHeight: 700, marginBottom: 20, marginTop: 5 }}>
+    <Card
+      sx={{
+        maxWidth: 300,
+        border: 3,
+        padding: 2,
+        borderColor: "primary.main",
+        borderRadius: 10,
+        maxHeight: 700,
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "flex-end",
+      }}
+    >
       <CardMedia
-        sx={{ height: 190 }}
+        sx={{ height: 250 }}
         image={item.img}
         title={`image ${item.title}`}
       />
@@ -27,9 +39,9 @@ const ProductCard = ({ item }) => {
           $ {item.price}
         </Typography>
       </CardContent>
-      <CardActions>
+      <CardActions sx={{ justifyContent: "center" }}>
         <Link to={`/itemDetail/${item.id}`}>
-          <Button size="small" variant="outlined">
+          <Button size="small" variant="contained">
             Ver detalle
           </Button>
         </Link>

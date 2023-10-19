@@ -1,12 +1,22 @@
-import { Outlet } from "react-router-dom";
+import { Badge, Box } from "@mui/material";
 
 const Footer = () => {
   return (
     <>
-     
-      <div style={{ width: "100%", backgroundColor: "#150681", height: "10vh" }}>
-        <h6 style={{ color: "white", padding: 8 }}>Todos los derechos Reservados</h6>
-      </div>
+      <Box sx={{ width: "100%", backgroundColor: "#150681", height: "15vh" }}>
+        <Badge
+          component="h2"
+          sx={{
+            display: "flex",
+            width: "100%",
+            color: "white",
+            justifyContent: "center",
+            padding: 2,
+          }}
+        >
+          Todos los derechos Reservados
+        </Badge>
+      </Box>
     </>
   );
 };

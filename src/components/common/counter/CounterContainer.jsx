@@ -1,14 +1,19 @@
 import { useState } from "react";
 import CounterPresentacional from "./CounterPresentacional";
+import Swal from "sweetalert2";
 
 const CounterContainer = ({ stock, onAdd }) => {
   const [contador, setContador] = useState(1);
 
   const sumar = () => {
+    const AlertStock = () => {
+      Swal.fire("Cantidad maxima!");
+    };
+
     if (contador < stock) {
       setContador(contador + 1);
     } else {
-      alert("Cantidad Maxima disponible");
+      AlertStock();
     }
   };
 
@@ -19,7 +24,12 @@ const CounterContainer = ({ stock, onAdd }) => {
   };
 
   return (
-    <CounterPresentacional sumar={sumar} restar={restar} contador={contador} onAdd={onAdd} />
+    <CounterPresentacional
+      sumar={sumar}
+      restar={restar}
+      contador={contador}
+      onAdd={onAdd}
+    />
   );
 };
 
