@@ -8,7 +8,7 @@ export const ItemDetail = ({ productSelected, onAdd }) => {
   return (
     <div>
       <div>
-        <Link to="/" className="btnNavegation">
+        <Link to="/products" className="btnNavegation">
           <ArrowBackIcon sx={{ color: "blue" }}></ArrowBackIcon>
           <Badge
             component="h5"
