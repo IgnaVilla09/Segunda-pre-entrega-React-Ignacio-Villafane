@@ -9,7 +9,7 @@ const Layout = () => {
       <Box sx={{ height: "20vh" }}>
         <Navbar />
       </Box>
-      <Box sx={{ minHeight: "80vh" }}>
+      <Box sx={{ minHeight: "70vh" }}>
         <Outlet />
       </Box>
       <Box sx={{ height: "10vh" }}>

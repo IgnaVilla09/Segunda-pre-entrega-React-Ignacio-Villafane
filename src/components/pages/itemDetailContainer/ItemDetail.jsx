@@ -23,6 +23,7 @@ export const ItemDetail = ({ productSelected, onAdd }) => {
         <img className="img-Detail" src={productSelected.img} alt="" />
         <div className="containerDescriptionBtns">
           <p>{productSelected.description}</p>
+          <b>$ {productSelected.price}.</b>
           <CounterContainer stock={productSelected.stock} onAdd={onAdd} />
         </div>
       </div>
